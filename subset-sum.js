@@ -9,7 +9,7 @@ const subsetSum = (sum, arr) => {
   let currTarget = sum
 
   for (let i = 0; i < arr.length; i++) {
-    if (sorted[i] <= sum) {
+    if (sorted[i] <= currTarget) {
       currTarget -= sorted[i]
       if (currTarget === 0) return true
     }
@@ -21,5 +21,5 @@ const subsetSum = (sum, arr) => {
 console.log('Expected: false // Got: ', subsetSum(2, [1, 10, 5, 3]))
 console.log('Expected: true // Got: ', subsetSum(10, [1, 10, 5, 3]))
 console.log('Expected: true // Got: ', subsetSum(9, [1, 10, 5, 3]))
-console.log('Expected: true // Got: ', subsetSum(19, [1, 10, 5, 3]))
 console.log('Expected: false // Got: ', subsetSum(17, [1, 10, 5, 3]))
+console.log('Expected: true // Got: ', subsetSum(16, [1, 10, 5, 3]))
