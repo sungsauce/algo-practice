@@ -18,8 +18,8 @@ const subsetSum = (sum, arr) => {
   return false
 }
 
-console.log('Expected: false // Got: ', subsetSum(2, [1, 10, 5, 3]))
-console.log('Expected: true // Got: ', subsetSum(10, [1, 10, 5, 3]))
-console.log('Expected: true // Got: ', subsetSum(9, [1, 10, 5, 3]))
-console.log('Expected: false // Got: ', subsetSum(17, [1, 10, 5, 3]))
-console.log('Expected: true // Got: ', subsetSum(16, [1, 10, 5, 3]))
+// console.log('Expected: false // Got: ', subsetSum(2, [1, 10, 5, 3]))
+// console.log('Expected: true // Got: ', subsetSum(10, [1, 10, 5, 3]))
+// console.log('Expected: true // Got: ', subsetSum(9, [1, 10, 5, 3]))
+// console.log('Expected: false // Got: ', subsetSum(17, [1, 10, 5, 3]))
+// console.log('Expected: true // Got: ', subsetSum(16, [1, 10, 5, 3]))
