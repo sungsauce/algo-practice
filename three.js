@@ -7,6 +7,8 @@
 // Do this in O(N) time and O(1) space.
 
 function three(array) {
+  // Hash table method:
+
   const dict = {}
   array.forEach(el => {
     if (!dict[el]) {
@@ -16,6 +18,14 @@ function three(array) {
       if (dict[el] === 1) delete dict[el]
     }
   })
-
   return Number(Object.keys(dict)[0])
+
+  // Bitwise method:
+  // let a = 0
+
+  // for (let el of array) {
+  //   a ^= el
+  // }
+
+  // return a
 }
