@@ -4,23 +4,6 @@
 // hash table with keys as each name
 // values as the person they've paired with before
 
-// function Reacto (names) {
-//   const log = {}
-//   names.forEach(name => log[name] = [])
-//   this.log = log
-// }
-
-// Reacto.prototype.generate = function () {
-//   let pairs = []
-//   const names = Object.keys(this.log).sort((a, b) => !!a * Math.random() - !!b * Math.random())
-
-//   for (let i = 0; i < names.length; i += 2) {
-//     pairs.push(names.slice(i, i + 2))
-//   }
-
-//   return pairs
-// }
-
 class Reacto {
 
   constructor (names) {
@@ -59,8 +42,8 @@ const test = ['bob', 'mary', 'ken', 'barbie']
 
 const reacto = new Reacto(may28thru31)
 
-console.log('DAY 1')
-console.log(reacto.generate().map(pair => pair.join('\n')).join('\n\n'))
-console.log('DAY 3')
-console.log(reacto.generate().map(pair => pair.join('\n')).join('\n\n'))
+// console.log('DAY 1')
+// console.log(reacto.generate().map(pair => pair.join('\n')).join('\n\n'))
+// console.log('DAY 3')
+// console.log(reacto.generate().map(pair => pair.join('\n')).join('\n\n'))
 
