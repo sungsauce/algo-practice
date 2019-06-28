@@ -51,7 +51,7 @@ function mpRecursive(num) {
 }
 
 // console.log(persistence(39))
-console.log('Result: ', mp(892378899))
-console.log('Result: ', mpStr(892378899))
+// console.log('Result: ', mp(892378899))
+// console.log('Result: ', mpStr(892378899))
 
 

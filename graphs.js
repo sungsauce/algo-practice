@@ -21,7 +21,7 @@ const graph = {
   d: []
 }
 
-console.log(doesPathExist(graph, 'a', 'b'))  // true
-console.log(doesPathExist(graph, 'a', 'd'))  // true
-console.log(doesPathExist(graph, 'b', 'a'))  // false
-console.log(doesPathExist(graph, 'a', 'a'))  // false
+// console.log(doesPathExist(graph, 'a', 'b'))  // true
+// console.log(doesPathExist(graph, 'a', 'd'))  // true
+// console.log(doesPathExist(graph, 'b', 'a'))  // false
+// console.log(doesPathExist(graph, 'a', 'a'))  // false
