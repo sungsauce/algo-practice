@@ -1,5 +1,5 @@
-function doesPathExist (graph, orig, dest, seen = {}) {
-  let connections = graph[orig]
+function doesPathExist (graph, orig, dest, seen = {}) { // orig = 'a', dest = 'e'
+  let connections = graph[orig] // b
 
   if (!connections.length) return false
   seen[orig] = true
@@ -15,13 +15,14 @@ function doesPathExist (graph, orig, dest, seen = {}) {
 }
 
 const graph = {
-  a: ['b'],
+  a: ['d', 'c'],
   b: ['c', 'd'],
-  c: ['d'],
-  d: []
+  c: ['d', 'e'],
+  d: [],
+  e: []
 }
 
 // console.log(doesPathExist(graph, 'a', 'b'))  // true
-// console.log(doesPathExist(graph, 'a', 'd'))  // true
+console.log(doesPathExist(graph, 'a', 'e'))  // true
 // console.log(doesPathExist(graph, 'b', 'a'))  // false
 // console.log(doesPathExist(graph, 'a', 'a'))  // false

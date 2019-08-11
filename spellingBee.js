@@ -2,19 +2,16 @@ function spellingBeeSolutions (wordList, puzzles) {
   const wordListUniques = {}
   const result = []
   wordList.forEach(word => {
-    const uniques = [...new Set([...word])].join('')
+    const uniques = [...new Set([...word])].sort().join('')
     if (wordListUniques[uniques]) wordListUniques[uniques]++
     else wordListUniques[uniques] = 1
   })
 
-  console.log(wordListUniques)
-
   puzzles.forEach(puzzle => {
     const key = puzzle[0]
-    const puzzleDict = new Set([...puzzle])
     let count = 0
     for (let word in wordListUniques) {
-      if ([...word].every(ltr => puzzleDict.has(ltr)) && word.includes(key)) {
+      if ([...word].every(ltr => puzzle.includes(ltr)) && word.includes(key)) {
         count += wordListUniques[word]
       }
     }
@@ -23,4 +20,4 @@ function spellingBeeSolutions (wordList, puzzles) {
   return result
 }
 
-console.log(spellingBeeSolutions(['APPLE', 'PLEASE', 'PLEAS'], ['SAELPXY', 'AELWXYZ', 'AELPXYZ']))
+console.log(spellingBeeSolutions(['APPLE', 'PLEASE', 'SLEAP', 'PLEAS'], ['SAELPXY', 'AELWXYZ', 'AELPXYZ']))
